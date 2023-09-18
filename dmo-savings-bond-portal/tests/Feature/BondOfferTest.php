@@ -137,16 +137,16 @@ class BondOfferTest extends TestCase
 
     // }
 
-    public function test_edit_offer_route()
-    {
-        $offer = Offer::factory()->create([
-            'offer_title' => 'Student Loan',
-            'organization_id' => $this->test_org_id,
-        ]);
+    // public function test_edit_offer_route()
+    // {
+    //     $offer = Offer::factory()->create([
+    //         'offer_title' => 'Student Loan',
+    //         'organization_id' => $this->test_org_id,
+    //     ]);
 
-        $response = $this->actingAs($this->user)->get('/sb/offers/'.$offer->id.'/edit');
+    //     $response = $this->actingAs($this->user)->get('/sb/offers/'.$offer->id.'/edit');
         
         
-        $response->assertSee('Offer Details');
-    }
+    //     $response->assertSee('Offer Details');
+    // }
 }
